@@ -15,15 +15,15 @@ function failed = max_stress_crit(stress, strength)
     %
     % Returns:
     %   failed   : Boolean indicating failure.
-    failed = False;
+    failed = false;
 
     % check for each stress component whether this exceeds the strength value,
     % return true if this is the case
-    if stress(1) < S(1,1) || stress(1) > S(1,2)  % first normal stress
-      failed = True;
-    elseif % complete this statement for the second normal stress
-      failed = True;
+    if stress(1) < strength(1,1) || stress(1) > strength(1,2)  % first normal stress
+      failed = true;
+    elseif  % complete this statement for the second normal stress
+      failed = true;
     elseif % complete this statement for the shear stress
-      failed = True;
+      failed = true;
     end
 end

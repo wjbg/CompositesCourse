@@ -34,8 +34,8 @@ function failed = TsaiHill(stress, strength)
 
     TH = % complete equation for Tsai-Hill value (see header of this function).
     if TH > 1
-      failed = True;
+      failed = true;
     else
-      failed = False;
+      failed = false;
     end
 end
